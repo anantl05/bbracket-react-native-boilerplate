@@ -5,7 +5,7 @@ import {
   Text,
   View
 } from 'react-native';
-import { createStackNavigator } from 'react-navigation';
+import { Button } from 'react-native-elements'
 
 export default class DetailScreen extends React.Component {
   render() {
@@ -17,6 +17,11 @@ export default class DetailScreen extends React.Component {
         <Text>Lightening Detail Screen</Text>
         <Text>Item ID passed: {JSON.stringify(itemID)}</Text>
         <Text>Other Param passed: {JSON.stringify(otherParam)}</Text>
+        <Button
+          medium
+          rightIcon={{name: 'home'}}
+          buttonStyle={{ backgroundColor: 'blue' }}
+          title='MEDIUM WITH RIGHT ICON' />
       </View>
     );
   }
